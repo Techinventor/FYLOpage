@@ -35,7 +35,7 @@ body{
 
 .mainWrap{
     color:#fff;
-    margin: 50px;
+    margin: 20px;
 }
 
 .wrap1{
@@ -93,7 +93,7 @@ body{
 }
 
 .wrap4{
-    padding: 20px;
+    padding: 15px;
     margin: 15px;
     display: flex;
     flex-wrap: wrap;
@@ -103,12 +103,13 @@ body{
 .wrap4_single{
     margin: 20px;
     padding: 25px;
-    width:250px;
-    max-height: 350px;
+    width:300px;
+    max-height: 450px;
     display:block;
     background-color: #202A3C;
     box-shadow: 3px 5px 5px #181f2b;
     line-height: 25px;
+    overflow: auto;
 }
 
 .wrap4_image{
@@ -198,7 +199,19 @@ body{
 }
 
 
-@media only screens and (max-width:  480px) {
+@media only screens and (min-device-width:  320px) and (max-device-width: 480) {
+    .wrap4_single{
+        margin: 20px;
+        padding: 25px;
+        width:250px;
+        max-height: 450px;
+        display:block;
+        background-color: #ebebeb;
+        box-shadow: 3px 5px 5px #181f2b;
+        line-height: 25px;
+        
+    }
+    
 
     body{
         background-image: url("../images/bg-curvy-mobile.svg");
@@ -242,17 +255,6 @@ body{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-    }
-
-    body{
-        background-image: url("../images/bg-curvy-mobile.svg");
-        background-repeat: no-repeat;
-        background-clip: border-box;
-        background-position-y: 350px;
-        background-position-x: 50%;
-        font-family: 'Open Sans', sans-serif;
-        color: #fff;
-        background-color: #1C2431;
     }
     
 }
